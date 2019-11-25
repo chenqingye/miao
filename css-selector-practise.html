@@ -7,6 +7,8 @@
   <style>
     /* YOUR STYLE GOES HERE */
     /* 不得改变页面的任何html结构 */
+
+    /* 第一题  更改悬浮颜色 */
     body>p:first-child {
       color: red;
     }
@@ -57,24 +59,31 @@
       font-size: 30px;
     }
 
+    /* 第二题 更改4567颜色 */
 
-
-    div~p.a {
+    .a>ul>li:nth-child(n + 4):nth-child(-n + 7) {
       color: red;
     }
 
-      {
+    /* 第三题  更改25以上的颜色 */
+    .b>ul>li:nth-child(-n+25) {
+      color: red;
+    }
+
+    .b>ul>li:nth-child(n+65) {
+      color: green;
+    }
+
+    .b>ul>li:nth-child(n+35):nth-child(-n +50) {
       color: blue;
     }
 
-
-    div>ul>li :nth-of-type(n+4) {
-      color: red;
-    }
-
-
-    div>ul>li:nth-of-type(n+8) {
-      color: red;
+    /* 第四题 质数和合数     */
+    .prime>ul>li:nth-child(2n+4),
+    .prime>ul>li:nth-child(3n+9),
+    .prime>ul>li:nth-child(5n+25),
+    .prime>ul>li:nth-child(7n+49) {
+      color: yellow;
     }
   </style>
 </head>
